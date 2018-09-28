@@ -1,170 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nauka Gotowania</title>
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Quicksand:400,700&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<title>Nauka Gotowania</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Quicksand:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
 </head>
-
 <body>
-
-    <nav>
-        <div class="mainLogo">
-            <p><a href="index.html">Cooking made easy</a></p>
-        </div>
-        <div class="tabsNav">
-            <div class="tabNav homePage"><a href="index.html">home</a></div>
-            <div class="tabNav badgesPage"><a href="index.html">about</a></div>
-            <div class="tabNav blogPage"><a href="index.html">blog</a></div>
-        </div>
-        <div class="loggedUser">
-            <div class="loggedUserFeature user">
-                <i class="fas fa-user-circle"></i>
-                <p class="userName">magdalena257</p>
-            </div>
-            <div class="loggedUserFeature learntRecipes">
-                <i class="fas fa-book-open"></i>
-                <p>2</p>
-            </div>
-            <div class="loggedUserFeature badges">
-                <i class="fas fa-medal"></i>
-                <p>1</p>
-            </div>
-        </div>
-    </nav>
-    <main class="recipehtml">
-
-        <section class="recipeContent">
-            <div class="bannerPhotos">
-                <img src="images/spaghetti.jpg" alt="" class="img1">
-                <img src='images/vege.jpg' alt="" class="img2">
-                <img src='images/fruits.jpg' alt="" class="img3">
-            </div>
-            <div class="recipeh1">
-                <h1>Spaghetti</h1>
-            </div>
-            <div class="ingredients">
-                <h2>Ingredients:</h2>
-                <p class="notScaled">for 2 portions</p>
-                <p class="scaled">for <input type="text" maxlength="2" size="1" placeholder="2"> portions</p>
-                <ul>
-                    <li>
-                        <input class="shoplisted" type="checkbox" id="c1" name="cc" />
-                        <label class="notScaled" for="c1">2 tomatos</label>
-                        <label class="scaled" for="c1"><input type="text" maxlength="4" size="4" placeholder="2">
-                            tomatos</label><span class="priced inactiveFeature">4euro</span><span class="caloried inactiveFeature">100kcal</span>
-                    </li>
-                    <li>
-                        <input class="shoplisted" type="checkbox" id="c2" name="cc" />
-                        <label class="notScaled" for="c2">150g pasta</label>
-                        <label class="scaled" for="c2"><input type="text" maxlength="4" size="4" placeholder="150">g
-                            pasta</label><span class="priced inactiveFeature">2euro</span><span class="caloried inactiveFeature">500kcal</span>
-                    </li>
-                    <li>
-                        <input class="shoplisted" type="checkbox" id="c3" name="cc" />
-                        <label class="notScaled" for="c3">20ml cream</label>
-                        <label class="scaled" for="c3"><input type="text" maxlength="4" size="4" placeholder="20">ml
-                            cream</label><span class="priced inactiveFeature">3.5euro</span><span class="caloried inactiveFeature">300kcal</span>
-                    </li>
-                    <li>
-                        <input class="shoplisted" type="checkbox" id="c4" name="cc" />
-                        <label class="notScaled" for="c4">5g oregano</label>
-                        <label class="scaled" for="c4"><input type="text" maxlength="4" size="4" placeholder="5">g
-                            oregano</label><span class="priced inactiveFeature">1euro</span><span class="caloried inactiveFeature">kcal</span>
-                    </li>
-                    <li>
-                        <input class="shoplisted" type="checkbox" id="c5" name="cc" />
-                        <label class="notScaled" for="c5">5g basilia</label>
-                        <label class="scaled" for="c5"><input type="text" maxlength="4" size="4" placeholder="5">g
-                            basilia</label><span class="priced inactiveFeature">1euro</span><span class="caloried inactiveFeature">0kcal</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="recipeList">
-                <h2>Recipe:</h2>
-                <ol>
-                    <li>
-                        <p>Put all the ingredients in a bowl.</p>
-                        <div class="timer"></div>
-                    </li>
-                    <li>
-                        <p>Mix them thoroughly.</p>
-                        <div class="timer"></div>
-                    </li>
-                    <li>
-                        <p>Put into the oven for 30 minutes</p>
-                        <div class="timer"></div>
-                    </li>
-                </ol>
-            </div>
-        </section>
-        <aside class="features">
-            <div class="measures feature">
-                <p><span>Metric</span> or <span class="imperial">imperial?</span></p>
-            </div>
-            <div class="shoplist feature">
-                <p>Don't have all the ingredients?</p>
-                <p class="descriptionFeature">Tick what you don't have. A shoplist will be created for you. You
-                    can:<a> send it on your email,</a> <a>phone via sms,</a> <a>snapchat,</a> <a>print it.</a>You can
-                    also substitute some of the products with something else. Just hover over the ingredient to see
-                    what you can do. If you don;t have enough of sth, check 'scale', below.</p>
-
-            </div>
-            <div class="scale feature">
-                <p>Scale</p>
-                <p class="descriptionFeature">Scale the thing!</p>
-
-            </div>
-            <div class="prices feature">
-                <p> Price</p>
-                <p class="descriptionFeature">Check the prices! If you scale the thing, prices will be scaled
-                    accordingly.</p>
-            </div>
-            <div class="calories feature">
-                <p> Calories</p>
-                <p class="descriptionFeature">Check the calories! If you scale the thing, calories will be scaled
-                    accordingly.</p>
-            </div>
-            <div class="timer feature">
-                <p> Timer</p>
-            </div>
-            <div class="voice feature">
-                <p> Real time audio description</p>
-            </div>
-            <div class="minimal feature">
-                <p> Minimal version</p>
-            </div>
-            <div class="tips feature">
-                <p>Tips</p>
-            </div>
-            <div class="recommendations feature">
-                <p> User recommendations</p>
-            </div>
-            <div class="gallery feature">
-                <p> User gallery</p>
-            </div>
-            <div class="rating feature">
-                <p> My rating</p>
-            </div>
-            <div class="userPhoto feature">
-                <p> Upload a photo</p>
-            </div>
-            <div class="export feature">
-                <p> Export this recipe to MyFitnessPal</p>
-            </div>
-
-
-        </aside>
-
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+	<div id="header">
+		<!--
+		<div class="mainLogo">
+			<p></p>
+		</div>
+		-->
+		<div id="logo"><a href="">Cooking made easy</a></div>
+		<div id="nav">
+			<div class="navElem"><a href="">Home</a></div>
+			<div class="navElem"><a href="">About</a></div>
+			<div class="navElem"><a href="">Blog</a></div>
+		</div>
+		<div id="userbox">
+			<!--
+			<div class="loggedUser">
+				<div class="loggedUserFeature user">
+					<i class="fas fa-user-circle"></i>
+					<p class="userName">magdalena257</p>
+				</div>
+				<div class="loggedUserFeature learntRecipes">
+					<i class="fas fa-book-open"></i>
+					<p>2</p>
+				</div>
+				<div class="loggedUserFeature badges">
+					<i class="fas fa-medal"></i>
+					<p>1</p>
+				</div>
+			</div>
+			-->
+		</div>
+	</div>
+	<div id="main">
+		<div id="recipe_content">
+			<div id="recipe_header">
+				<!--
+				<div class="bannerPhotos">
+					<img src="images/spaghetti.jpg" alt="" class="img1">
+					<img src='images/vege.jpg' alt="" class="img2">
+					<img src='images/fruits.jpg' alt="" class="img3">
+				</div>
+				-->
+				<div id="recipe_bannerImage"></div>
+				<h1>${recipe_name}</h1>
+			</div>
+			<div id="recipe_ingredients">
+				<h2>Ingredients:</h2>
+				<!--
+				<p class="notScaled">for 2 portions</p>
+				<p class="scaled">for <input type="text" maxlength="2" size="1" placeholder="2"> portions</p>
+				<ul>
+					<li>
+						<input class="shoplisted" type="checkbox" id="c1" name="cc" />
+						<label class="notScaled" for="c1">2 tomatos</label>
+						<label class="scaled" for="c1"><input type="text" maxlength="4" size="4" placeholder="2">
+							tomatos</label><span class="priced inactiveFeature">4euro</span><span class="caloried inactiveFeature">100kcal</span>
+					</li>
+					<li>
+						<input class="shoplisted" type="checkbox" id="c2" name="cc" />
+						<label class="notScaled" for="c2">150g pasta</label>
+						<label class="scaled" for="c2"><input type="text" maxlength="4" size="4" placeholder="150">g
+							pasta</label><span class="priced inactiveFeature">2euro</span><span class="caloried inactiveFeature">500kcal</span>
+					</li>
+					<li>
+						<input class="shoplisted" type="checkbox" id="c3" name="cc" />
+						<label class="notScaled" for="c3">20ml cream</label>
+						<label class="scaled" for="c3"><input type="text" maxlength="4" size="4" placeholder="20">ml
+							cream</label><span class="priced inactiveFeature">3.5euro</span><span class="caloried inactiveFeature">300kcal</span>
+					</li>
+					<li>
+						<input class="shoplisted" type="checkbox" id="c4" name="cc" />
+						<label class="notScaled" for="c4">5g oregano</label>
+						<label class="scaled" for="c4"><input type="text" maxlength="4" size="4" placeholder="5">g
+							oregano</label><span class="priced inactiveFeature">1euro</span><span class="caloried inactiveFeature">kcal</span>
+					</li>
+					<li>
+						<input class="shoplisted" type="checkbox" id="c5" name="cc" />
+						<label class="notScaled" for="c5">5g basilia</label>
+						<label class="scaled" for="c5"><input type="text" maxlength="4" size="4" placeholder="5">g
+							basilia</label><span class="priced inactiveFeature">1euro</span><span class="caloried inactiveFeature">0kcal</span>
+					</li>
+				</ul>
+				-->
+			</div>
+			<div id="recipe_steps">
+				<h2>Recipe:</h2>
+				<ol>
+					<li>
+						<p>Put all the ingredients in a bowl.</p>
+					</li>
+					<li>
+						<p>Mix them thoroughly.</p>
+					</li>
+					<li>
+						<p>Put into the oven for 30 minutes</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div id="recipe_features">
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Metric or imperial?</div>
+				<div class="recipe_feature_body"></div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Don't have all the ingredients?</div>
+				<div class="recipe_feature_body">
+					<p>Tick what you don't have. A shoplist will be created for you. You
+					can:<a> send it on your email,</a> <a>phone via sms,</a> <a>snapchat,</a> <a>print it.</a>You can
+					also substitute some of the products with something else. Just hover over the ingredient to see
+					what you can do. If you don;t have enough of sth, check 'scale', below.</p>
+				</div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Scale</div>
+				<div class="recipe_feature_body">
+					<p>Scale the thing!</p>
+				</div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Price</div>
+				<div class="recipe_feature_body">
+					<p>Check the prices! If you scale the thing, prices will be scaled
+					accordingly.</p>
+				</div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Calories</div>
+				<div class="recipe_feature_body">
+					<p>Check the calories! If you scale the thing, calories will be scaled
+					accordingly.</p>
+				</div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Timer</div>
+				<div class="recipe_feature_body"></div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Real time audio description</div>
+				<div class="recipe_feature_body"></div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Minimal version</div>
+				<div class="recipe_feature_body"></div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Tips</div>
+				<div class="recipe_feature_body"></div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Recommendations</div>
+				<div class="recipe_feature_body"></div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Gallery</div>
+				<div class="recipe_feature_body"></div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">My rating</div>
+				<div class="recipe_feature_body"></div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Upload a photo</div>
+				<div class="recipe_feature_body"></div>
+			</div>
+			<div class="recipe_feature" id="recipe_feature_">
+				<div class="recipe_feature_name">Export</div>
+				<div class="recipe_feature_body"></div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	<p>(c) 2018</p>
+	</div>
 </body>
-
 </html>
