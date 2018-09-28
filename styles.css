@@ -37,7 +37,7 @@ a {
 body {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 10px;
-	/* color: var(--whitish); */
+	color: var(--darkish);
 }
 
 /******** header ***********/
@@ -60,7 +60,7 @@ body {
 	#nav {
 		flex: 1;
 		display: flex;
-		padding: 0px 20px;
+		padding: 0px 10px;
 		
 		/* background-color: red; */
 	}
@@ -84,46 +84,61 @@ body {
 		}
 
 	#userbox {
-		width: 300px;
+		width: 350px;
 		
 		background-color: yellow;
 	}
 
 /******** main ***********/
 #main {
+	width:100%;
+	display: flex;
 	
+	background-color: white;
 }
 
-#recipe_content {
-	
+#recipe_main {
+	flex: 1;
 }
-
-	#recipe_ingredients > h2, #recipe_steps > h2 {
-		
-	}
-
+	
 	#recipe_header {
-		
+		width: 100%;
+		height: 160px;
 	}
 
 		#recipe_bannerImage {
+			width: 100%;
+			height: 140px;
 			
+			background-color: purple;
 		}
-
+		
 		#recipe_header > h1{
+			padding-left:280px; /* size of #recipe_ingredients */
+		}
+	
+	#recipe_content {
+		display: flex;
+		padding-top: 10px;
+	}
+	
+		#recipe_ingredients > h2, #recipe_steps > h2 {
 			
 		}
 
-	#recipe_ingredients {
-		
-	}
+		#recipe_ingredients {
+			width: 280px;
+		}
 
-	#recipe_steps {
-		
-	}
+		#recipe_steps {
+			flex: 1;
+		}
 
 #recipe_features {
+	width: 340px; /* size of #userbox - elem padding */
+	padding-left: 10px;
 	
+	background-color: #8dad8d;
 }
 
 	.recipe_feature {
@@ -131,13 +146,17 @@ body {
 	}
 	
 		.recipe_feature_name {
-			
+			font-size: 24px;
 		}
 		
 		.recipe_feature_body {
-			
+			font-size: 12px;
+			/* display:none; */
 		}
 
 #footer {
+	width:100%;
+	height:24px;
 	
+	background-color: gray;
 }
