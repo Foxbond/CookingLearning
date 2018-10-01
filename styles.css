@@ -83,13 +83,32 @@ body {
 		.navElem:hover a {
 			color: var(--lightBlue);
 		}
+	
 
 	#userbox {
 		width: 350px;
-		
-		background-color: yellow;
+		text-align:right;
+		/* background-color: yellow; */
 	}
-
+		
+		#userbox .fas {
+			font-size: 20px;
+		}
+		
+		#userbox .scaleText  {
+			font-size: 24px;
+			padding-left: 4px;
+			padding-right: 10px;
+		}
+		
+		#userbox > a {
+			transition: .2s;
+			color: var(--whitish);
+		}
+		
+		#userbox > a:hover {
+			color: var(--lightBlue);
+		}
 /******** main ***********/
 #main {
 	width:100%;
