@@ -6,20 +6,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Quicksand:400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Yes, I know, most tutorials recommend including scripts at the bottom of a page. I disagree :) (ofc I can explain it later) -->
 	<script src="jquery.fittext.js"></script>
 	<script src="script.js"></script>
 </head>
 <body>
 	<div id="header">
-		<!--
-		<div class="mainLogo">
-			<p></p>
-		</div>
-		-->
 		<div id="logo"><a href="">Cooking made easy</a></div>
 		<div id="nav">
-			<div class="navElem"><a href="">Home</a></div>
+			<div class="navElem"><a href="">Home</a></div><!-- I think it should be made of <li> elements to be more "modern" "html5-like" -->
 			<div class="navElem"><a href="">About</a></div>
 			<div class="navElem"><a href="">Blog</a></div>
 		</div>
@@ -32,14 +27,14 @@
 	<div id="main">
 		<div id="recipe_main">
 			<div id="recipe_header">
-				<div id="recipe_bannerImage">
+				<div id="recipe_bannerImage"> <!-- Its currently purple box, I suggest doing "js carousel" instead of css black magic trickery -->
 					<!--
 						<img src="images/spaghetti.jpg" alt="" class="img1">
 						<img src='images/vege.jpg' alt="" class="img2">
 						<img src='images/fruits.jpg' alt="" class="img3">
 					-->
 				</div>
-				<h1>${recipe_name}</h1>
+				<h1>Recipe_name</h1>
 			</div>
 			<div id="recipe_content">
 				<div id="recipe_ingredients">
@@ -169,7 +164,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="footer">
+	<div id="footer"><!-- Oh I love footers but dont had time to give it a proper look! -->
 	<p>(c) 2018</p>
 	</div>
 </body>

@@ -1,3 +1,4 @@
+/* I used "flex" properies like you, oh god, how they implemented that! Id like to donate to a person responsible for that, I still remember creating page layouts with <table> and later with "float" */
 
 * {
 	padding: 0px;
@@ -109,6 +110,7 @@ body {
 		#userbox > a:hover {
 			color: var(--lightBlue);
 		}
+
 /******** main ***********/
 #main {
 	width:100%;
